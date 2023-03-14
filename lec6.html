@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h2>This is HTML forms tutorial</h2>
+    <form action="backend.php">
+        <label for="name"> Name</label>
+        <div>
+            <input type="text" name= myName id="name">
+        </div>
+        <br>    <!-- br not recommended will use css margin -->
+        <div>
+            Role: <input type="text" name= "myRole">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            Bonus: <input type="number" name="MyBonus">
+        </div>
+        <br>
+        <label for="eligible">Are u eligible?:</label>
+        <div>
+            <input type="checkbox" name="myEligibility" id="eligible">
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="myGender" id=""> Female <input type="radio" name="myGender" id="">
+            other <input type="radio" name="myGender" id="">
+        </div>
+        <br>
+        <div>
+            write about yourself: <br> <textarea name="myText" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+           <label for="vehicle">Vehicle</label>
+           <select name="myVehicle" id="vehicle">
+               <option value="2 w" selected>Two wheeler</option>
+               <option value="3 w">Three wheeler</option>
+               <option value="4 w">Four wheeler</option>
+           </select>
+        </div>
+        <br>
+        <div>
+           <input type="submit" value="SUBMIT NOW">
+           <input type="reset" value="RESET NOW">
+
+        </div>
+        
+     
+        
+    </form>
+</body>
+</html>
