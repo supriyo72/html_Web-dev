@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript | Strings and Strings methods</title>
+</head>
+<body>
+    <div class="container">
+        <div id="content"></div>
+        <h1>Lorem ipsum dolor sit.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis quisquam adipisci vero doloremque iste voluptatem reprehenderit minus sequi quam, id unde porro architecto magnam veniam. Ipsam quasi quis debitis laboriosam officia repellat sapiente et.</p>
+    </div>
+    <script>
+        var string = "SUPRIYO" ;
+        // var string = 'SUPRI'YO ';   //this shows an error
+        // var string = 'SUPRI"YO ';
+        var name = ' mali'
+        var message= ' is a fuckin bad boy'
+        var channel= 'code with mali'
+        var temp = `${name}  is a 'fuckin' bitch and has a channel called "${channel}"`;
+        console.log(string + name + message);
+        console.log(temp);
+        var len= name.length;
+        console.log(`Length of name is ${len}`);
+        console.log(string);
+        console.log("Supriyo\nsachin\tand\bis also there");
+        var y = new String("Raju")
+        console.log(y);
+        document.getElementById('content').innerHTML = '<h3>This is an H3 heading</h3>'
+
+    </script>
+</body>
+</html>

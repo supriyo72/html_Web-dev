@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Dates</title>
+</head>
+<style>
+    .container{
+        font-size: 23px;
+        background-color: bisque;
+        border: 2px solid grey;
+        padding: 34px;
+        margin: 4px;
+        text-align: center;
+    }
+    #time{
+        font-weight: bold;
+    }
+</style>
+<body>
+    <div class="container">
+        <!-- This is a container -->
+        current time is <span id="time"></span>
+    </div>
+    <script>
+        console.log("This is date and time tutorial");
+        let now = new Date();
+        console.log(now);
+
+        let dt = new Date(5000);
+        console.log(dt);
+
+        let newDaate = new Date("2029-09-30")
+        console.log(newDaate)
+
+        // let newDate = new Date(year,month,date,hours,minutes,seconds,milliseconds)
+        let newDate = new Date(3020,4,6,9,3,2,34);
+        console.log(newDate)
+        
+        let yr = newDate.getFullYear();
+        console.log("The year is ",yr);
+
+        let dat = newDate.getDate();
+        console.log("The date is ",dat);
+
+        let mon = newDate.getMonth();
+        console.log("The month is ",mon);
+
+        let hr = newDate.getHours();
+        console.log("The hour is ",hr);
+
+        let min = newDate.getMinutes();
+        console.log("The minutes is ",min);
+
+        let dy = newDate.getDay();
+        console.log("The day is ",dy);
+
+        let sec = newDate.getSeconds();
+        console.log("The seconds is ",sec);
+
+        newDate.setDate(15);
+        console.log(newDate);
+
+        newDate.setDate(32);
+        console.log(newDate);
+
+        newDate.setDate(17);
+        newDate.setMinutes(34);
+        console.log(newDate);
+
+        // setInterval(updateTime,1000);
+        
+        // function updateTime(){
+        //     time.innerHTML = new Date();
+        // }
+setInterval(updateTime,1000);
+function updateTime(){
+    time.innerHTML = new Date();
+}
+// function displayTime(){;
+// time = new Date();
+// console.log(time);
+// document.getElementById('time').innerHTML=time;
+// }
+// setInterval(displayTime,1000);
+
+    </script>
+</body>
+</html>

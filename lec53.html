@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <div class="container">
+        This is about Loops
+    </div>
+    <script>
+        console.log("This is tutorial 53")
+        let m=0;
+        for(m=0;m<3;m++){
+            console.log(m);
+        }
+
+        let friends = ["sachin","mali","khushal","kadu","vikas"]
+        // for (let index = 0; index < friends.length; index++) {
+        //     console.log("Hello friends, " + friends[index]);
+        // }
+
+        // friends.forEach(function f(xyz){
+        //     console.log("hello friends, "+xyz+ " to modern javascript");
+        // })
+
+        for (xyz of friends){
+            console.log("hello friends, "+xyz+ " to modern javascript again");
+        }
+
+        let employee = {
+            name: "supriyo",
+            salary:2,
+            channel:"cws"
+        }
+        // Use this loop to iterate over objects in javascript
+        for(key in employee){
+            console.log(`The ${key} of employee is ${employee[key]} `);
+        }
+
+        // While loop in js
+
+        let i = 3;
+        // let  i=0
+        while(i<8){
+            console.log(`${i} is less than 8`);
+            i++;
+        }
+
+        // do whileloop in js
+        let j = 10;
+        do{
+            console.log(`${j} is less than 5 but we r inside do while loop`);
+            j++;
+        }while(j<5)
+    </script>
+</body>
+</html>

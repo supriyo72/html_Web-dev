@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javacsript strings Function</title>
+    <style>
+        .container{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Howzatt</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ea commodi officiis aliquam repudiandae distinctio, ut doloremque veritatis corrupti ducimus pariatur rem.</p>
+    </div>
+    <script>
+        var str = "This is a string"
+        console.log(str);
+        // First occurence of a substring
+        var position1 = str.indexOf('a');
+        var position2 = str.indexOf('is');
+        console.log(position1)
+        console.log(position2)
+
+        //last occurence of substring
+        position = str.lastIndexOf('is');
+        console.log(position)
+
+        // Substring from a string
+        //  slice: 1,n prints 1 to n-1
+        // slice can take neg values while substring not
+        // var substr = str.slice(1,11);
+        // console.log(substr);
+        // var substrr = str.substring(1,6);
+        // console.log(substrr);
+        // var substr1 = str.substr(1,5);
+        // console.log(substr1)
+
+        var replaced = str.replace('string','supriyo');
+        console.log(str)
+        console.log(replaced)
+
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        var newstring = str.concat(' Doing web development')
+        console.log(newstring)
+
+        // var strwhitespace = "   This contains     whitespace   "
+        // console.log(strwhitespace)
+        // console.log(strwhitespace.trim())
+
+        var char2 = str.charAt(2);
+        // var char2 = str.charCodeAt(2);  //not v.imp
+        console.log(char2)
+
+        console.log(str[3])
+
+    </script>
+</body>
+</html>

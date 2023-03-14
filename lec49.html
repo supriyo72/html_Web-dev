@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and Conditionals</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+        </ul>
+    </div>
+    <script>
+        var string1 = "This is a string";
+        var string1 = "This is a string2";
+        // will print this is a string2
+        console.log(string1);
+
+        // global variable
+        // let a="s";
+        // {
+        //     let a="su";
+        //     console.log(a)
+        // }
+            // will print the global variable
+            // console.log(a)
+
+        // Everything can be changed but const cannot be changed
+
+        // const a = "This cannot be changed";
+        // a="Why cannot be changed";
+        // console.log(a);
+
+        // let age= 34;
+        // let age= 5;
+        // if(age>18){
+        //     console.log("you can drink water");
+        // }
+        // else if(age==4){
+        //     console.log("Age is 4")
+        // }
+        // else if(age==5){
+        //     console.log("Age is 5")
+        // }
+        // else{
+        //     console.log("u can drink cold");
+        // }
+
+// if u dont use break it will run all the property
+        const cups = 43;
+        // cups=10;    this cannot be done as const doesnt change
+        switch (cups) {
+            case 4:
+                console.log("The value of cups is 4");
+                break;
+
+            case 41:
+                console.log("The value of cups is 41");
+                break;
+
+            case 42:
+                console.log("The value of cups is 42");
+                break;
+
+            case 43:
+                console.log("The value of cups is 43");
+                break;
+
+            default:
+                console.log("The value of cups is neither 4,41,42,43");
+                break;
+        }
+
+
+    </script>
+</body>
+</html>
