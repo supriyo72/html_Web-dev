@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .container{
+            width: 900px;
+            border: 2px solid purple;
+            /* if u want the box in center */
+            /* margin: auto; */
+            margin: 33px auto;
+            background-color: rgb(247, 204, 149);
+        }
+        .items{
+            border: 3px solid grey;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: rgb(255, 223, 223);
+        }
+        #fruit{
+            float:left;
+            width: 48%;
+        }
+        #computer{
+            float:right;
+            width: 48%;
+        }
+        /* clear: both means no overlapping from left and right */
+        /* clear: left means no overlapping from left*/
+        /* clear: right means no overlapping from right*/
+        #stationary{
+            /* float: left; */
+            /* float: right; */
+            clear: both;
+            width: 99%;
+        }
+        p, h3{
+            /* text-align: left;
+            text-align: right;
+            text-align: center; */
+            text-align: justify;
+        }
+        h1{
+
+    margin:23px auto;
+    width: 394px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>WELCOME TO SUPRIYO STORES</h1>
+        <div id="fruit" class="items">
+            <h3>Fruits</h3>
+            <p id="fruitpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, laboriosam. Nemo nobis asperiores maxime quas, minus excepturi blanditiis eum, provident alias voluptas sint eius consectetur tempore perspiciatis? Placeat, corrupti ipsam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio sapiente, ullam ea quibusdam dolor facilis eligendi obcaecati harum consequuntur reprehenderit enim voluptatum. Magnam minus debitis voluptatibus? Itaque, dolorem vero. Architecto tempora consequuntur tempore molestiae?</p>
+        </div>
+        <div id="computer" class="items">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, laboriosam. Nemo nobis asperiores maxime quas, minus excepturi blanditiis eum, provident alias voluptas sint eius consectetur tempore perspiciatis? Placeat, corrupti ipsam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae laborum officiis, aspernatur minus odio omnis alias eligendi exercitationem magni libero ratione ut dignissimos nam similique tenetur, voluptate dolorem quaerat facilis quidem eius provident! Quia.</p>
+        </div>
+        <div id="stationary" class="items">
+            <h3>stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, laboriosam. Nemo nobis asperiores maxime quas, minus excepturi blanditiis eum, provident alias voluptas sint eius consectetur tempore perspiciatis? Placeat, corrupti ipsam.</p>
+        </div>
+        <div id="glasses" class="items">
+            <h3>glass</h3>
+            <p id="glassespara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, laboriosam. Nemo nobis asperiores maxime quas, minus excepturi blanditiis eum, provident alias voluptas sint eius consectetur tempore perspiciatis? Placeat, corrupti ipsam.</p>
+        </div>
+    </div>
+
+</body>
+</html>

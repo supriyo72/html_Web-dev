@@ -1,0 +1,72 @@
+<!-- display inline: jithna bada element uthna bada space lega -->
+<!-- display block: aap  uske width ko set kar sakhte ho aur margin auto karke center kar sakhte ho  -->
+<!-- inline block:inline+block features -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display property</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            margin: auto;
+            border: 2px solid rebeccapurple;
+            width: 1200px;
+            background-color: wheat;
+        }
+        img{
+            width: 34px;
+            margin: auto;
+            display: block;            
+        }
+        h3{
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0px;
+
+        }
+        .box{
+            border: 4px solid greenyellow;
+            background-color: rgb(235, 235, 174);
+            display: block;
+            margin: 4px 0px;
+            padding: 23px;
+       
+            width: 33%;
+            box-sizing: border-box;
+            display: inline-block;
+
+        }
+        .container{
+            margin: auto;
+            width: 1200px;
+        }
+     
+    </style>
+</head>
+<body>
+    <header class="top">
+        <img src="D:/club life/slogo.png" alt="">
+        <h3>welcome to Supriyo's Blog</h3>
+    </header>
+    <div class="container">
+        <div class="box">
+        <h4 class="heading">Heading</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ex reprehenderit animi voluptates totam. Consectetur reiciendis, quod nobis est dolorem sit tempore temporibus possimus neque qui maiores distinctio aperiam non voluptatum. Aspernatur accusamus debitis ab in exercitationem, iusto suscipit odio recusandae at ipsa delectus.</p>
+        </div>
+        <div class="box">
+        <h4 class="heading">Heading</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ex reprehenderit animi voluptates totam. Consectetur reiciendis, quod nobis est dolorem sit tempore temporibus possimus neque qui maiores distinctio aperiam non voluptatum. Aspernatur accusamus debitis ab in exercitationem, iusto suscipit odio recusandae at ipsa delectus.</p>
+        </div>
+        <div class="box">
+        <h4 class="heading">Heading</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ex reprehenderit animi voluptates totam. Consectetur reiciendis, quod nobis est dolorem sit tempore temporibus possimus neque qui maiores distinctio aperiam non voluptatum. Aspernatur accusamus debitis ab in exercitationem, iusto suscipit odio recusandae at ipsa delectus.</p>
+        </div>
+        
+    </div>
+</body>
+</html>

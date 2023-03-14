@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+    <!-- if external css is written before internal css then external would be executed -->
+    <!-- if !important is written then nobody can overwrite  -->
+    <!-- external css -->
+    <link rel="stylesheet" href="tut12.css">
+    <!-- Internal css -->
+    <style>
+        p{
+            color: rebeccapurple;
+            background-color: rosybrown !important;
+        }
+    </style>
+</head>
+<!-- internal css have first priority over inline css -->
+<body>
+    <h3>This is our css tutorial</h3>
+    <!-- inline css -->
+    <!-- <p style="color: red;background-color:yellow ;">Here you will get to know everything about html/css</p> -->
+    <p>Here you will get know everything about html/css</p>
+</body>
+</html>
